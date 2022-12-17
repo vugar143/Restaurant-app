@@ -30,7 +30,6 @@ function AddOrders({ table, setTable }) {
     setMealForm({ name: '', price: 0, count: 0 })
     setTotal(total+mealForm.price*mealForm.count)
   }
-  console.log(choosenMeals)
   const submitNewOrder = (e) => {
     e.preventDefault()
     const tempNewOrder = { ...newOrder, meals: choosenMeals, }
@@ -46,9 +45,7 @@ function AddOrders({ table, setTable }) {
   const deleteButton = (id) => {
     const tempMeals = choosenMeals.filter((a) => a.id !== id)
     const filteredMeals=choosenMeals.filter((b)=>b.id===id)
-    console.log(filteredMeals)
     setChoosenMeals([...tempMeals])
-    console.log(tempMeals)
     setTotal(total-filteredMeals.map((a)=>a.price))
   }
 
@@ -69,17 +66,6 @@ function AddOrders({ table, setTable }) {
         localStorage.setItem("waiters", JSON.stringify(a))
       })
   }, [])
-
-
-  useEffect(() => {
-    console.log('newOrder', newOrder)
-  }, [newOrder])
-
-  useEffect(() => {
-    console.log('mealForm', mealForm)
-  }, [mealForm])
-
-
   return (
     <>
       <main className='add-orders'>
