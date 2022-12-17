@@ -15,7 +15,7 @@ function AddWaiters() {
   const submitForm=(e)=>{
     e.preventDefault()
     setLoading(true)
-      fetch("http://localhost:5000/waiters",{
+      fetch("http://localhost:3000/waiters",{
         method:"POST",
         headers:{
             Aceept:"application/json",

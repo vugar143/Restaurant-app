@@ -50,7 +50,7 @@ function AddOrders({ table, setTable }) {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/tables")
+    fetch("http://localhost:3000/tables")
       .then((a) => a.json())
       .then((a) => {
         setTables(a)
@@ -59,7 +59,7 @@ function AddOrders({ table, setTable }) {
   }, [])
 
   useEffect(() => {
-    fetch("http://localhost:5000/waiters")
+    fetch("http://localhost:3000/waiters")
       .then((a) => a.json())
       .then((a) => {
         setWaiters(a)

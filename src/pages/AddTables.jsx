@@ -15,7 +15,7 @@ function AddTables() {
   const submitForm=(e)=>{
     e.preventDefault()
     setLoading(true)
-      fetch("http://localhost:5000/tables",{
+      fetch("http://localhost:3000/tables",{
         method:"POST",
         headers:{
             Aceept:"application/json",

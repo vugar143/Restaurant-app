@@ -4,7 +4,7 @@ function Home() {
   const [table, setTable] = useState([])
   const [modalShow, setModalShow] = useState(false)
   const [modal,setModal]=useState([])
-  const [sortedTable,setsortedTable]=useState([])
+  const [sortedTable,setSortedTable]=useState([])
   const finishOrder = (id) => {
     let tempObject = table.filter((a) => a.id == id)[0]
     tempObject = { ...tempObject, finished_time: Date.now(),status:"done" }
@@ -22,7 +22,7 @@ function Home() {
     setTable(JSON.parse(localStorage.getItem("orders")))
   }, [])
   useEffect(()=>{
-   setsortedTable(table.sort((a,b)=>b.status.localeCompare(a.status)))
+   setSortedTable(table.sort((a,b)=>b.status.localeCompare(a.status)))
   },[table])
   return (
     <>
