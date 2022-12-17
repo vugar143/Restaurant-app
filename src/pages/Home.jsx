@@ -22,7 +22,7 @@ function Home() {
     setTable(JSON.parse(localStorage.getItem("orders")))
   }, [])
   useEffect(()=>{
-   setSortedTable(table.sort((a,b)=>b.status.localeCompare(a.status)))
+   setSortedTable(table?.sort((a,b)=>b.status.localeCompare(a.status)))
   },[table])
   return (
     <>
