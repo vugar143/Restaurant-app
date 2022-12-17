@@ -1,0 +1,43 @@
+{
+  "orders": [],
+  "waiters": [
+    {
+      "id": 1,
+      "name": "Vugar Badalov"
+    },
+    {
+      "name": "Akif",
+      "id": 2
+    },
+    {
+      "name": "Ozkan",
+      "id": 3
+    },
+    {
+      "name": "Resul",
+      "id": 4
+    },
+    {
+      "name": "Elmir",
+      "id": 5
+    }
+  ],
+  "tables": [
+    {
+      "name": "m4",
+      "id": 1
+    },
+    {
+      "name": "m5",
+      "id": 2
+    },
+    {
+      "name": "m6",
+      "id": 3
+    },
+    {
+      "name": "m99",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+body{
+  background-color: teal;
+}
+.df{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.nav{
+  height: 80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: aliceblue;
+}
+.nav-container{
+  display: flex;
+  gap: 50px;
+}
+a.active{
+  color: orange;
+}
+a{
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.form-container input:not([type="submit"]){
+  width: 200px;
+  display: block;
+  margin-bottom: 5px;
+}
+.my-order {
+margin-top: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: #dddddd;
+}
+.total-amount{
+  width: 70%;
+  justify-content: space-between;
+}
+button{
+  margin-top:10px;
+  width: 100px;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: aqua;
+  color:darkgreen;
+}
+.add-necessity{
+display:flex;
+align-items:center;
+justify-content:center;
+gap: 20px;
+}
+.waiter-select .table-select{
+  border-radius: 10px;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter:blur(2px) ;
+}
+.modal-container{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 500px;
+  background-color:white;
+  overflow: scroll;
+  border-radius: 35px;
+}
+#line{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.delete{
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  border-radius: 3px;
+}
+.details{
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  border-radius: 6px;
+}
+.end-order{
+  background-color: rgb(147, 90, 90);
+  color: white;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  border-radius: 6px;
+}
+.buttons{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 5px;
+}
+.heading{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 20px;
+}
